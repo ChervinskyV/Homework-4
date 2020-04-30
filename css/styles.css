@@ -36,7 +36,7 @@ a {
 }
 .cards-title {
   font-size: 48px;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto';
   color: rgb(81, 81, 81);
   line-height: 32px;
   text-align: center;
@@ -65,11 +65,14 @@ a {
 }
 .header-logo {
   font-size: 30px;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto';
   color: rgb(81, 81, 81);
   line-height: 32px;
   letter-spacing: 0.6px;
   float: left;
+}
+.header-logo::first-letter {
+  color: rgb(26, 188, 156);
 }
 .nav-list {
   float: right;
@@ -82,18 +85,14 @@ a {
   margin-right: 30px;
 }
 .nav-list-link {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans';
   color: rgb(81, 81, 81);
   font-size: 14px;
   line-height: 12px;
   font-weight: bold;
   letter-spacing: 0.28px;
 }
-
 .nav-list-link:hover {
-  color: rgb(26, 188, 156);
-}
-.header-logo:hover {
   color: rgb(26, 188, 156);
 }
 
@@ -101,7 +100,6 @@ a {
 
 .featured-products {
 }
-
 .card {
   width: 250px;
   height: 320px;
@@ -113,8 +111,8 @@ a {
     rgba(59, 58, 58, 0.514) 22%
   );
 }
-li:hover {
-  color: rgb(26, 188, 156);
+.card:hover {
+  background: rgb(26, 188, 156);
 }
 .card-name {
   color: rgb(255, 255, 255);
@@ -126,7 +124,7 @@ li:hover {
   text-transform: uppercase;
   letter-spacing: -0.36px;
   text-decoration: none;
-  padding: 8px;
+  padding: 12px;
 }
 .card-price {
   color: rgb(255, 255, 255);
@@ -136,13 +134,18 @@ li:hover {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 5px;
-  margin-right: 8px;
+}
+.price-box {
+  float: right;
+  opacity: 0.5;
+  background: rgba(59, 58, 58, 0.514);
+  padding: 12px;
+  width: 56px;
+  height: 44px;
 }
 
 .link-item {
   display: block;
-  padding: 4px;
   box-sizing: border-box;
 }
 .card:not(:nth-child(4n)) {
@@ -160,30 +163,32 @@ li:hover {
 .wrapper:last-child {
   margin: 0;
 }
+.img-news {
+  margin-bottom: 15px;
+}
 .title-news {
   width: 301px;
   color: #555252;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  margin-bottom: 15px;
 }
 .title-news::after {
   content: '';
   display: block;
   width: 136px;
   height: 3px;
-  margin-top: 14px;
+  margin-bottom: 15px;
   background-color: rgb(26, 188, 156);
 }
 .descript-news {
-  margin: 0;
+  margin-bottom: 30px;
   width: 330px;
   color: #555252;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: -0.28px;
-  margin-bottom: 10px;
-  padding-top: 20px;
 }
 .button-news {
   width: 160px;
